@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Elegante </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(to right,#3c1f10,#8b4513);
+        }
+        .text-shadow{
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .hover-scale{
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover{
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-amber-50">
+    <!-- Navigation -->
+    <header class=" mx-auto">
+        <nav class="bg-gradient-to-r from-brown-900 to-amber-900 text-white p-6 fixed w-full z-50 transition-all duration-300 grid grid-cols-2">
+          <div class="container mx-auto flex flex-col md:flex-row">
+            <div>
+                <img src="./photo-1527596428171-7885b82c91c6.avif" alt="" class="h-12 w-12 rounded-full">
+            </div>
+            <h2 class="text-3xl font-serif">Cafe Elegante</h2>
+          </div>
+          <div class="mt-4  md:-0 space-x-8">
+            <a class="hover:text-amber-200 transition-colors duration-300" href="#">Home</a>
+            <a class="hover:text-amber-200 transition-colors duration-300" href="#">Menu</a>
+            <a class="hover:text-amber-200 transition-colors duration-300" href="#">Gallery</a>
+            <a class="hover:text-amber-200 transition-colors duration-300" href="#">About</a>
+                <button class="bg-amber-600 px-6 py-2 rounded-full hover:bg-amber-500 transition-colors duration-300 ml-4">
+                    Order Now
+                </button>
+          </div>    
+        </nav>
+    </header>
+    <!-- nav end -->
+     <!-- hero section -->
+      <div class="relative h-screen flex items-center justify-center">
+        <img src="./istockphoto-1335033449-612x612.webp" alt="Hero coffee" class="absolute inset-0  w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-55"> 
+      </div>
+        <div class="relative text-center text-white z-10 px-4" data-aos="fade-up">
+            <h2 class="text-6xl font-serif mb-6 text-shadow ">Artisanal coffee Experience</h2>
+            <p class="text-2xl mb-8 text-amber-200">Where every cup tells a story</p>
+            <div class="space-x-4">
+                <button class="bg-amber-600 text-white px-8 py-4 rounded-full hover:bg-amber-500 transition-all duration-300 transform hover:scale-105">
+                    Explore Menu
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-amber-900 transition-all duration-300">
+                    Book Table
+                </button>
+            </div>
+        </div>
+    </div>
+      <!-- Featured Products -->
+       <section class="container mx-auto px-32 py-20">
+        <h2 class="text-3xl mb-20 font-serif text-center">Signature Collection</h2>
+       <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
+        <div class="shadow-xl rounded-b-xl">
+            <div>
+                <img src="./photo-1461023058943-07fcbe16d735.avif" alt="" class="h-72 rounded-t-xl ">
+            </div>
+           <div class="py-10 px-6">
+            <div class="space-y-4">
+                <h2 class="text-3xl font-bold">Ethiopian Gold</h2>
+                <p>Single-origin Ethiopian beans with notes of jasmine and citrus </p>
+            </div>
+            <div class="grid grid-cols-2 gap-10 space-y-6">
+                <div class="py-6">
+                    <p class="text-xl text-orange-900 font-bold">$5.90</p>
+                </div>
+                <div>
+                    <a class="text-amber-900 border-2 rounded-full p-2 bg-amber-400" href="#">Add to Cart</a>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="shadow-xl rounded-b-xl">
+            <div>
+                <img src="./photo-1461023058943-07fcbe16d735.avif" alt="" class="h-72 rounded-t-xl ">
+            </div>
+           <div class="py-10 px-6">
+            <div class="space-y-4">
+                <h2 class="text-3xl font-bold">Vanilla Dream Latt</h2>
+                <p>Smoot espresso with vanilla bean and silky steamed milk </p>
+            </div>
+            <div class="grid grid-cols-2 gap-10 space-y-6">
+                <div class="py-6">
+                    <p class="text-xl text-orange-900 font-bold">$6.50</p>
+                </div>
+                <div>
+                    <a class="text-amber-900 border-2 rounded-full p-2 bg-amber-400" href="#">Add to Cart</a>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="shadow-xl rounded-b-xl">
+            <div>
+                <img src="./istockphoto-1178469307-612x612.jpg" alt="" class="h-72 rounded-t-xl ">
+            </div>
+           <div class="py-10 px-6">
+            <div class="space-y-4">
+                <h2 class="text-3xl font-bold">Nitro Cold Brew</h2>
+                <p>24-hour steeped cold brew charged with nitrogen for perfect crema </p>
+            </div>
+            <div class="grid grid-cols-2 gap-10 space-y-6">
+                <div class="py-6">
+                    <p class="text-xl text-orange-900 font-bold">$5.90</p>
+                </div>
+                <div>
+                    <a class="text-amber-900 border-2 rounded-full p-2 bg-amber-400" href="#">Add to Cart</a>
+                </div>
+            </div>
+           </div>
+        </div>
+       </div>
+       </section>
+       <!-- Experience section -->
+        <section class="py-20 bg-gradient-to-r from-amber-900 to-amber-800 text-white">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div class="px-20">
+                        <h2 class="text-4xl font-serif mb-8"> Perfection</h2>
+                        <p class="text-lg mb-6">Our master baristas craft each cup with precision and passion, using only the finest beans sourced from sustainable farms worldwide</p>
+                        <div class="flex gap-10">
+                            <div>
+                                <h3 class="text-3xl font-bold text-amber-300 mb-2">15+</h3>
+                                <p>Years of Excellent</p>
+                            </div>
+                            <div>
+                                <h3 class="text-3xl font-bold text-amber-300 mb-2">50k+</h3>
+                                <p>Happy Customer</p>
+                            </div>
+                        </div>
+                          <div class="flex gap-10">
+                            <div>
+                                <h3 class="text-3xl font-bold text-amber-300 mb-2">12</h3>
+                                <p>Singnature Drinks</p>
+                            </div>
+                            <div>
+                                <h3 class="text-3xl font-bold text-amber-300 mb-2">3</h3>
+                                <p>Global Awards</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="relative">
+                        <img src="./premium_photo-1673545518947-ddf3240090b1.avif" alt="" class="rounded-2xl shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Coffee Gallery -->
+    <section class="container mx-auto  px-32 my-20">
+        <div class="text-3xl text-center mb-20 font-serif">
+             <h2>Coffee Gallery</h2>
+        </div>
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 lg:grid-cols-4 gap-2">
+            <img class="h-64 w-60 rounded-xl" src="./istockphoto-1367393323-612x612.jpg" alt=" ">
+            <img class="h-64 w-60 rounded-xl" src="./istockphoto-1178469307-612x612.jpg" alt="">
+            <img class="h-64 w-60 rounded-xl" src="./istockphoto-1197065241-612x612.jpg" alt="">
+            <img class="h-64 w-60 rounded-xl" src="./istockphoto-1328814964-612x612.jpg" alt="">
+        </div>
+    </section>
+ <footer class="bg-gray-900 text-white">
+    <div class="container mx-auto px-10 py-20 ">
+        <div class="grid sm:grid-cols-4 md:grid-cols-2 lg:grid-cols-3           xl:grid-cols-4 gap-10 mb-20">
+             <div>
+                <h2 class="mb-10 text-2xl">Cafe Elegante</h2>
+                <p class="mb-5">Crafting perfect moments,one cup at a time.</p>
+            </div>
+            <div>
+                <h2 class="mb-10 text-2xl">Visit Us</h2>
+                <p class="mb-5">123 Coffee Lane </p>
+                <p class="mb-5">New York,NY 10001 </p>
+                <p class="mb-5">+1 (555) 123-4567</p>
+            </div>
+            <div>
+                <p class="mb-10 text-2xl">Hours</p>
+                <p class="mb-5">Mon-fri:7:00 AM-8:00 PM</p>
+                <p>Sat-Sun:8:00 AM-9:00 PM</p>
+            </div>
+            <div class="space-y-10">
+             <p class="text-2xl">Newsletter</p>
+                <div class="flex text-gray-400">
+                    <input type="email" placeholder="Your mail" class="bg-gray-300 rounded-l-xl py-1">
+                    <button class="bg-amber-600 py-1 px-4 rounded-r-xl">
+                       Join
+                    </button>
+                </div>
+            </div>
+        </div>
+       <div class="mb-5">
+        <hr>
+       </div>
+        <div class="text-center">2024 Cafe Elegante.All rights reserved.</div>
+    </div>
+ </footer>
+</body>
+</html>
